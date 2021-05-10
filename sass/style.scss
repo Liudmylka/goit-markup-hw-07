@@ -507,7 +507,7 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
-  top: 1492px;
+  top: 1892px;
 }
 
 .team {
@@ -1157,8 +1157,8 @@ input:hover {
   color: var(--black);
 }
 .coment__text {
-  width: 448px;
-  height: 120px;
+  outline: none;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1225,6 +1225,7 @@ textarea:hover {
   display: block;
 }
 .accept__checkbox {
+  width: 100%;
   display: flex;
   font-family: Roboto;
   font-size: 14px;
