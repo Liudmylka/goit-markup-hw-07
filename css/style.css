@@ -402,51 +402,6 @@ textarea {
   -webkit-appearance: none;
 }
 
-/* cyrillic-ext */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCFPrEHJA.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCMPrEHJA.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCHPrEHJA.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCGPrEHJA.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrE.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 body {
   background: var(--background);
   font-family: "Roboto", sans-serif;
@@ -534,7 +489,7 @@ textarea:hover {
   align-items: center;
   color: var(--title);
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
@@ -546,6 +501,9 @@ textarea:hover {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  left: 673px;
+  top: 477px;
 }
 
 .button {
@@ -668,7 +626,6 @@ textarea:hover {
   align-items: center;
   justify-content: space-between;
   width: 135px;
-  padding-top: 32px;
   padding-right: 331px;
   padding-bottom: 32px;
   padding-left: 0px;
@@ -682,6 +639,7 @@ textarea:hover {
 
 .upper__nav {
   justify-content: flex-start;
+  padding: 0px;
   margin-right: 93px;
   margin: 0;
 }
@@ -758,9 +716,7 @@ textarea:hover {
   display: inline-block;
   align-items: center;
   justify-content: space-around;
-  padding-top: 32px;
   padding-right: 0px;
-  padding-bottom: 32px;
   padding-left: 0px;
   color: var(--main-color);
   text-decoration: none;
@@ -888,8 +844,6 @@ textarea:hover {
   text-align: center;
   height: 600px;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
@@ -897,8 +851,10 @@ textarea:hover {
 
 .hero__title {
   display: inline-block;
+  align-items: center;
+  justify-content: center;
   color: var(--title);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 44px;
   line-height: 136%;
   text-transform: uppercase;
@@ -907,6 +863,9 @@ textarea:hover {
   width: 696px;
   margin-bottom: 30px;
   margin-top: 0;
+  position: absolute;
+  left: 425px;
+  top: 327px;
 }
 
 .hero-blok {
@@ -1032,7 +991,7 @@ textarea:hover {
 .group {
   width: 270px;
   height: 120px;
-  background: var --button;
+  background: var(--button);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -1059,7 +1018,7 @@ textarea:hover {
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
   margin: 0;
@@ -1074,7 +1033,7 @@ textarea:hover {
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 0px;
@@ -1113,7 +1072,7 @@ textarea:hover {
   align-items: center;
   justify-content: center;
   display: flex;
-  top: 1892px;
+  top: 1413px;
 }
 
 .team {
@@ -1128,7 +1087,7 @@ textarea:hover {
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -1174,7 +1133,7 @@ textarea:hover {
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 500;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   white-space: pre;
@@ -1186,7 +1145,7 @@ textarea:hover {
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 30px;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
@@ -1237,7 +1196,7 @@ textarea:hover {
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -1293,7 +1252,7 @@ textarea:hover {
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 40px;
   letter-spacing: 0.06em;
   text-decoration: none;
   width: 322px;
@@ -1306,7 +1265,7 @@ textarea:hover {
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 32px;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
@@ -1437,7 +1396,7 @@ li:nth-child(n + 7) {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 30px;
   letter-spacing: 0.03em;
   margin-top: 20px;
   text-align: left;

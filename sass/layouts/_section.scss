@@ -20,7 +20,7 @@
 .group {
   width: 270px;
   height: 120px;
-  background: var (--button);
+  background: var(--button);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -46,7 +46,7 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
   margin: 0;
@@ -59,7 +59,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 0px;
@@ -97,7 +97,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  top: 1892px;
+  top: 1413px;
 }
 
 .team {
@@ -112,7 +112,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -156,7 +156,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 500;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   white-space: pre;
@@ -167,7 +167,7 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 30px;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
@@ -217,7 +217,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 24px;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -272,7 +272,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 40px;
   letter-spacing: 0.06em;
   text-decoration: none;
   width: 322px;
@@ -284,7 +284,7 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 187%;
+  line-height: 32px;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
