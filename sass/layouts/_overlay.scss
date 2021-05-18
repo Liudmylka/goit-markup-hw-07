@@ -34,11 +34,16 @@
 .overlay__text {
   position: absolute;
   display: flex;
-  margin: 0px;
-  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
   font-family: Roboto;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 156%;
   letter-spacing: 0.03em;
   color: var(--title);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+  margin-right: 45px;
 }

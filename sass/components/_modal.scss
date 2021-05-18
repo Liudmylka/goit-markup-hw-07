@@ -69,7 +69,7 @@
   font-family: Roboto;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 115%;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -100,11 +100,13 @@
 .person__form:focus .person__icon {
   fill: var(--color-link);
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--color-link);
+  border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .person__label {
   font-family: Roboto;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 116%;
   letter-spacing: 0.01em;
   color: var(--text--small-text);
   margin-bottom: 4px;
@@ -119,7 +121,7 @@
   background: var(--title);
   margin-top: 4px;
   padding: 11px 30px;
-  color: var(--black);
+  color: var(--two-logo-color);
 }
 .coment__text {
   outline: none;
@@ -133,6 +135,20 @@
   padding-bottom: 12px;
   resize: none;
   margin-top: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: 0.01em;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid #2196f3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .coment {
   margin-bottom: 20px;
@@ -180,7 +196,7 @@
   display: flex;
   font-family: Roboto;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--text--small-text);
   margin: 0;
