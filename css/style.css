@@ -800,12 +800,8 @@ input:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
   height: 600px;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -822,6 +818,9 @@ input:hover {
   width: 696px;
   margin-bottom: 30px;
   margin-top: 0;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
 }
 
 .hero-blok {
@@ -1024,11 +1023,11 @@ input:hover {
   width: 370px;
   height: 70px;
   margin: 0;
-  position: absolute;
   align-items: center;
   justify-content: center;
   display: flex;
-  top: 1810px;
+  position: absolute;
+  top: 1412px;
 }
 
 .team {
