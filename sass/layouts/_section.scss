@@ -32,7 +32,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: left;
@@ -46,7 +46,7 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
   margin: 0;
@@ -59,7 +59,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 67%;
+  line-height: 0.67;
   letter-spacing: 0.03em;
   text-align: center;
   padding: 0px;
@@ -75,15 +75,15 @@
 }
 
 .card__item {
-  display: block;
   margin-right: 30px;
   margin-left: 0px;
+  position: relative;
 }
 
 .card__text {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -96,10 +96,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  position: absolute;
-  top: 1412px;
 }
-
 .team {
   background: var(--button);
   padding-top: 94px;
@@ -112,7 +109,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 67%;
+  line-height: 0.67;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -156,7 +153,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 500;
   font-size: 16px;
-  line-height: 114%;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
   white-space: pre;
@@ -167,7 +164,7 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
@@ -217,7 +214,7 @@
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 36px;
-  line-height: 67%;
+  line-height: 0.67;
   letter-spacing: 0.03em;
   margin: 0 auto;
   text-align: center;
@@ -251,6 +248,13 @@
     border-color: var(--color-link);
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &:hover .object,
+  &:focus .object {
+    fill: var(--color-link);
+    background-color: var(--title);
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .clients__grid:last-child {
   margin-right: 0px;
@@ -263,19 +267,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.clients__grid:hover .object,
-.clients__grid:focus .object {
-  fill: var(--color-link);
-  background-color: var(--title);
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .title-small {
   display: block;
   color: var(--text-one--title-two--title-three--title-name--title-small);
   font-weight: 700;
   font-size: 18px;
-  line-height: 222%;
+  line-height: 2.22;
   letter-spacing: 0.06em;
   text-decoration: none;
   width: 322px;
@@ -287,21 +285,12 @@
   color: var(--text--small-text);
   font-weight: 400;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 2;
   text-decoration: none;
   letter-spacing: 0.03em;
   margin: 0;
 }
-.grid_images__card:hover .overlay,
-.grid_images__card:focus .overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-.grid_images__last:hover .overlay,
-.grid_images__last:focus .overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
+
 .card-title {
   padding-top: 20px;
   padding-right: 24px;
@@ -338,6 +327,11 @@
       0px 0px 4px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 li:nth-child(n + 7) {
@@ -358,6 +352,11 @@ li:nth-child(n + 7) {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 0px 4px 6px rgba(0, 0, 0, 0.16);
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .photo li {
