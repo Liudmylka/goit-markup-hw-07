@@ -1,10 +1,14 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: var(--background-hero);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero/Img.jpg");
+    url("../../images/hero/Img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,7 +16,6 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
 }
 .hero__title {
   color: var(--title);

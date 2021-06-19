@@ -469,7 +469,7 @@ input:hover {
   letter-spacing: 0.06em;
   background: var(--color-link);
   margin: 0 auto;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -603,6 +603,13 @@ input:hover {
   padding-right: 331px;
   padding-bottom: 32px;
   padding-left: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
 }
 
 .upper__list {
@@ -629,6 +636,13 @@ input:hover {
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text--small-text);
 }
 
 .contact-list {
@@ -800,8 +814,12 @@ input:hover {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: var(--background-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../hero_img/Img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/Img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -809,7 +827,6 @@ input:hover {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
 }
 
 .hero__title {
@@ -1362,6 +1379,7 @@ img {
   line-height: 2.14;
   letter-spacing: 0.03em;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
